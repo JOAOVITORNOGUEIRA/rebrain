@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Projeto Rebrain</title>
+    <link rel="stylesheet" href="cadastro.css"> <!-- ou pro.css, dependendo do contexto -->
+</head>
+<body>
+    <div id="top-bar">
+        <a href="#"><img src="../../img/email.png" alt="E-mail" class="larger-icon"></a>
+        <span>contato@rebrain.com</span>
+    </div>
+
+    <div class="content">
+        <p class="info-text">
+            Para utilizar o Re-Brain, é necessário se cadastrar. Complete os campos abaixo 
+            para que possamos conhecer você.
+        </p>
+        <div class="login-box">
+            <div class="input-group">
+                <input type="text" id="firstName" name="firstName" placeholder="Nome">
+                <input type="text" id="lastName" name="lastName" placeholder="Sobrenome">
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" name="email" placeholder="E-mail">
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" name="password" placeholder="Senha">
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirmar Senha">
+            </div>
+            <div class="input-group">
+                <input type="tel" id="phone" name="phone" placeholder="Telefone">
+            </div>
+            <div class="terms">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="privacyPolicy" name="privacyPolicy">
+                    <label for="privacyPolicy">Aceito a política de privacidade e políticas de uso da plataforma</label>
+                </div>
+            
+                <div class="checkbox-group">
+                    <input type="checkbox" id="receiveEmails" name="receiveEmails">
+                    <label for="receiveEmails">Aceito receber e-mails com novidades da Re-Brain</label>
+                </div>
+            </div>
+            <button class="rounded-button">Cadastrar</button>
+        </div>
+
+        <div class="additional-info">
+            Política de privacidade | Políticas de uso da plataforma | Formas de pagamento
+        </div>
+
+        <!-- Adicionando a LOG.png -->
+        <div class="content">
+            <div class="logo-img">
+                <img src="../../img/LOG.png" alt="Logo" class="logo-img">
+                <div class="logo-text">CADASTRO</div>
+            </div>
+        </div>
+
+    <!-- Outros scripts podem vir aqui -->
+    <script src="cadastro.js"></script>
+</body>
+</html>

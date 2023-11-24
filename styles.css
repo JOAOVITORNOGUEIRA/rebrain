@@ -1,0 +1,176 @@
+/* Reset padrão do CSS */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    background: linear-gradient(to top, #F5F5F5, #FFFFFF);
+    background-image: url('img/logo.png');
+    background-size: 50% 100%;
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+/* Barra superior */
+#top-bar {
+    background-color: #B10DDE;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* Ícone do menu */
+.menu-icon {
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    background-color: #6A5ACD; /* Adiciona preenchimento azul ao ícone */
+    padding: 3px 5px 3px 30px; /* Ajusta o espaço interno (topo, direita, baixo, esquerda) */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    margin-right: -10px; /* Diminui a margem à direita para aproximar do canto da página */
+}
+
+/* Estilo para quando o mouse estiver sobre o ícone do menu */
+.menu:hover .menu-content {
+    display: block;
+}
+
+/* Estilo personalizado para o ícone do menu */
+.menu-icon::before {
+    white-space: nowrap; /* Evita quebrar a linha */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+/* Estilo do menu */
+.menu-content {
+    display: none;
+    background-color: #6A5ACD; /* Cor do menu (azul claro) */
+    position: absolute;
+    top: 60px; /* Ajuste a distância do topo conforme necessário */
+    left: 0;
+    z-index: 1;
+    padding: 10px;
+    border-top: 2px solid #000;
+    max-width: 200px; /* Defina a largura máxima do menu */
+    border: 2px solid #6A5ACD; /* Adiciona contorno azul ao redor do menu */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao menu */
+}
+
+/* Estilo para quando o mouse estiver sobre as opções do menu */
+ul li:hover {
+    background-color: #483D8B; /* Cor mais escura para destacar a opção */
+}
+
+/* Links do menu */
+.menu-content a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.menu-content hr {
+    border: 1px solid white;
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* Ícones de contato */
+#contact {
+    display: flex;
+    align-items: center;
+    order: 1;
+}
+
+#contact a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    margin: 10px 20px;
+}
+
+#contact span {
+    color: white;
+    margin-right: 10px;
+}
+
+#contact img {
+    max-width: 40px;
+    margin-right: 10px;
+}
+
+/* Botões de login */
+#login {
+    display: flex;
+    align-items: center;
+    order: 2;
+}
+
+#login a {
+    text-decoration: none;
+}
+
+.rounded-button {
+    background-color: #0D1334;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Ícones maiores */
+.larger-icon {
+    max-width: 40px;
+}
+
+/* Adicione isso ao final do seu CSS */
+.content {
+    display: flex;
+    height: 100vh; /* 100% da altura da tela */
+    overflow: hidden;
+}
+
+.background-image {
+    background: url('sua-imagem.jpg') center/cover;
+    width: 50%;
+}
+
+.text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Alinha o texto à esquerda */
+    padding: 20px; /* Adiciona algum espaçamento interno para o texto */
+}
+
+h2 {
+    text-align: left;
+    font-size: 2em;
+    margin-bottom: 20px; /* Adiciona margem inferior para separar do próximo elemento */
+    /* Adicione outros estilos conforme necessário */
+}
+
+.saiba-mais {
+    color: #B10DDE; /* Cor da barra superior */
+    cursor: pointer; /* Adiciona cursor de link */
+}

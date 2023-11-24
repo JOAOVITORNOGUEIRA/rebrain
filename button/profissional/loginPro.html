@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login do Paciente - Projeto Rebrain</title>
+    <link rel="stylesheet" href="pro.css">
+</head>
+<body>
+    <div class="background-image">
+        <h1 class="background-text">LOGIN PACIENTE</h1>
+    </div>
+
+    <div id="top-bar">
+        <a href="#"><img src="../../img/email.png" alt="E-mail" class="larger-icon"></a>
+        <span>contato@rebrain.com</span>
+    </div>
+
+    <div class="content">
+        <div class="login-box">
+            <input type="text" id="username" name="username" placeholder="Usuário/E-mail">
+            
+            <div class="password-container">
+                <input type="password" id="password" name="password" placeholder="Digite sua senha">
+            </div>
+            
+            <button class="rounded-button">Entrar</button>
+        </div>
+    
+        <p id="forgotPasswordLink">Você esqueceu a senha? <a href="#" id="forgotPassword">Clique aqui</a>.</p>
+    </div>
+
+    <!-- Adicionando a LOG.png -->
+    <div class="content">
+        <div class="logo-img">
+            <img src="../../img/LOG.png" alt="Logo" class="logo-img">
+            <div class="logo-text">LOGIN PROFISSIONAL</div>
+        </div>
+    </div>
+
+    <!-- Novo login-box para redefinir a senha -->
+    <div class="reset-password-box" style="display: none;">
+        <input type="text" id="resetUsername" name="resetUsername" placeholder="Usuário/E-mail">
+        <input type="text" id="verificationCode" name="verificationCode" placeholder="Código recebido por E-mail/SMS">
+        <input type="password" id="newPassword" name="newPassword" placeholder="Nova Senha">
+        <input type="password" id="confirmNewPassword" name="confirmNewPassword" placeholder="Confirmar Nova Senha">
+
+        <button class="rounded-button" onclick="resetPassword()">Redefinir</button>
+    </div>
+
+    <!-- Adicione a seguinte div no final do seu body -->
+    <div class="footer">
+        <p>Gostaria de trabalhar com a Re-Brain? <a href="cadastro.html" id="signupLink">Cadastre-se</a>.</p>
+    </div>
+
+    <!-- Outros scripts podem vir aqui -->
+    <script src="pro.js"></script>
+</body>
+</html>

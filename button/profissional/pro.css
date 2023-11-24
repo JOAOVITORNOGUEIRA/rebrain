@@ -1,0 +1,230 @@
+/* Estilos para a barra superior */
+#top-bar {
+    background-color: #B10DDE;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 2; /* Certifica-se de que a barra está acima da imagem de fundo */
+}
+
+#top-bar a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+#top-bar span {
+    color: white;
+}
+
+#top-bar img {
+    max-width: 40px;
+    margin-left: 10px;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Estilos para a imagem de fundo */
+.background-image {
+    background: url('../../img/prof.png') center/cover fixed;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.background-text {
+    color: white;
+    text-align: center;
+    margin-top: 40vh; /* Ajuste conforme necessário */
+    font-size: 2em;
+}
+
+.reset-password-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(177, 13, 222, 0.8); /* Fundo com transparência */
+    z-index: 3; /* Garante que a caixa de redefinição esteja acima de tudo */
+    overflow: hidden; /* Impede a rolagem na caixa de redefinição */
+}
+
+/* Estilos para a logo */
+.logo-img {
+    position: fixed;
+    z-index: 1; /* Garante que a logo está acima da background-image */
+    width: 230px;
+    top: 70px; /* Ajuste conforme necessário */
+    left: 10px; /* Ajuste conforme necessário para a posição horizontal */
+}
+
+/* Adicione o estilo para o texto "testando" */
+.logo-text {
+    position: absolute;
+    top: 80px; /* Ajuste conforme necessário para a posição vertical */
+    left: 150%; /* Coloca o ponto de referência no meio da largura da imagem */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    white-space: nowrap; /* Evita quebra de linha */
+    color: #7B37FE; /* Cor desejada */
+    font-size: 26px; /* Ajuste conforme necessário para o tamanho da fonte */
+    z-index: 2; /* Certifique-se de que o texto está acima da background-image e da logo */
+}
+/* Estilos para o conteúdo */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+/* Estilos para a caixa de login */
+.login-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #B10DDE;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 300px;
+    color:  #000000;
+    margin-bottom: 20px; /* Adicionado espaço na parte inferior do login-box */
+}
+
+#forgotPasswordLink {
+    color: #000000;
+    margin-top: 10px;
+}
+
+#signupLink {
+    color: #000000;
+    margin-top: 10px;
+}
+
+label {
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 15px;
+    width: calc(100% - 16px);
+    box-sizing: border-box;
+    background: #0D1334;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.rounded-button {
+    background-color: #0D1334;
+    color: #1BF6F4;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.rounded-button:hover {
+    color: #1BF6F4;
+}
+
+.password-container input {
+    padding-right: 30px;
+    width: calc(100% - 1px); /* Ajuste o valor conforme necessário */
+}
+
+.password-container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Adicione essas regras ao seu arquivo pac.css */
+.reset-password-box {
+    display: none;
+    background: #B10DDE;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px; /* Adicionado para definir a altura */
+    margin: auto;
+    color: #FFFFFF;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.reset-password-box input {
+    padding: 8px;
+    margin-bottom: 15px;
+    width: calc(100% - 16px); /* Usando calc para considerar o padding de 8px em ambos os lados */
+    box-sizing: border-box;
+    background: #0D1334;
+    color: #FFFFFF;
+    border: none; /* Removendo a borda */
+    border-radius: 5px;
+    text-align: center; /* Centralizando o texto */
+}
+
+.reset-password-box .rounded-button {
+    background-color: #0D1334; /* Cor de fundo do botão */
+    color: #1BF6F4; /* Cor do texto no botão */
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center; /* Centralizando o texto */
+}
+
+/* Adicione a regra para alterar a cor do texto do botão ao passar o mouse */
+.reset-password-box .rounded-button:hover {
+    color: #1BF6F4;
+}
+
+.footer {
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 4; /* Certifica-se de que o rodapé está acima de tudo */
+}
+
+.footer a {
+    color: #0D1334;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
